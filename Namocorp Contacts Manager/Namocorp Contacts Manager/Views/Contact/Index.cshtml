@@ -1,0 +1,42 @@
+﻿@model List<Namocorp_Contacts_Manager.Models.Domain.Contact>
+
+@{
+}
+
+<h1>Contacts</h1>
+
+<table id="contactsTable" class="table table-bordered table-hover table-sm">
+	<thead>
+		<tr>
+			<th>Contact Id</th>
+			<th>First Name</th>
+			<th>Surname</th>
+			<th>Date Of Birth</th>
+			<th>Telephone Number</th>
+			<th>Cell Number</th>
+			<th>Address</th>
+			<th>City Data</th>
+			<th>State Data</th>
+			<th>Country Data</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var contact in Model)
+		{
+			<tr>
+				<td>@contact.ContactId</td>
+				<td>@contact.FirstName</td>
+				<td>@contact.Surname</td>
+				<td>@contact.DateOfBirth.ToString("dd-mm-yyyy")</td>
+				<td>@contact.TelephoneNumber</td>
+				<td>@contact.CellNumber</td>
+				<td>@contact.Address</td>
+				<td>@contact.City</td>
+				<td>@contact.State</td>
+				<td>@contact.Country</td>	
+				<td><a href="Contact/View/@contact.ContactId">View</a></td>
+			</tr>
+		}
+	</tbody>
+</table>
