@@ -11,3 +11,6 @@
 5. Once these steps have been completed, the project may be run within an IDE.
 
 6. If so wished, a deployable version of the project is located in the Deployable folder. It may be deployed in the IIS after the migrations have been executed.
+
+
+Note: The geographical API that was used unfortunately did not offer information on individual cities. All others that I was able to locate required paid subscriptions. I hope this is acceptable and that it still illustrates my understanding of how to interact with these APIs.
